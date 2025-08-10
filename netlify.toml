@@ -1,5 +1,5 @@
 [build]
-  command = "ng build --prod"
+  command = "npx @netlify/angular-runtime@latest build --configuration production"
   publish = "dist/clothing/browser"  # Replace with your actual `dist` folder
   functions = "netlify/functions"     # Only if using serverless functions
 
