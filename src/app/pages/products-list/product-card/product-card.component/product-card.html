@@ -1,0 +1,19 @@
+<!-- <div class="product-cards">{{ product().title }}</div>
+<img [src]="product().image" alt="" class="product-img" /> -->
+<div class="product-cards">
+  <div class="margin-products">
+    <img [src]="product().image" alt="" class="product-img" />
+    <div class="product-details">
+      <h5 class="product-title">{{ product().title }}</h5>
+      <p class="product-price">${{ product().price }}</p>
+      <app-primary-button
+        [label]="'Add to Cart'"
+        class="add-to-cart-card"
+        (btnClicked)="cartService.addToCart(product())"
+      ></app-primary-button>
+    </div>
+    <span class="stock-btn" [class]="stockStatus.class">
+      {{ stockStatus.text }}
+    </span>
+  </div>
+</div>

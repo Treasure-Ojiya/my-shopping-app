@@ -1,0 +1,33 @@
+.cart-item {
+  background-color: white;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+  padding: 1.5rem;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.item-img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+}
+
+.item-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.item-title {
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.item-price {
+  font-size: 0.8rem;
+}
+
+.item-btn {
+  flex: 1, 1, 0%;
+}

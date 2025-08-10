@@ -1,0 +1,30 @@
+.order-section {
+  background-color: #f1f5f9;
+  padding: 1.5rem;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+  border: 0.5px solid #ccc;
+  margin: 1rem 0;
+}
+
+.summary-section {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.summary-item {
+  display: flex;
+  gap: 0.8rem;
+  margin-top: 0.5rem;
+}
+
+.summary-total {
+  /* font-weight: bold; */
+  font-size: 1.12rem;
+}
+
+.summary-total-price {
+  font-weight: bold;
+  font-size: 1.12rem;
+}

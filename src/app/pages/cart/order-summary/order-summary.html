@@ -1,0 +1,13 @@
+<div class="order-section">
+  <h2>Order Summary</h2>
+  <div class="summary-section">
+    <div class="summary-item">
+      <span class="summary-total">Total:</span>
+      <span class="summary-total-price">{{ "$" + total() }}</span>
+    </div>
+
+    <div>
+      <app-primary-button [label]="'Proceed to checkout'"></app-primary-button>
+    </div>
+  </div>
+</div>

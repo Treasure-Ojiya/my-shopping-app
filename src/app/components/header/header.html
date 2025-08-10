@@ -1,0 +1,8 @@
+<div class="header">
+  <h3 routerLink="/">{{ title() }}</h3>
+  <app-primary-button
+    [label]="'Cart(' + cartService.cart().length + ')'"
+    (btnClicked)="showButtonClicked()"
+    routerLink="/cart"
+  ></app-primary-button>
+</div>

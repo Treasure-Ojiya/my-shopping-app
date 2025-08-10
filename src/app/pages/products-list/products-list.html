@@ -1,0 +1,6 @@
+<div class="products-list">
+  @for (product of products(); track product.id) {
+  <!-- <div>{{ product.title }}</div> -->
+  <app-product-card [product]="product"></app-product-card>
+  }
+</div>
