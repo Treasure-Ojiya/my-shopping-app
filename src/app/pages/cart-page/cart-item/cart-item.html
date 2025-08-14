@@ -1,10 +1,26 @@
-<div class="cart-item">
+<!-- <div class="cart-item">
   <img [src]="item().image" alt="" class="item-img" />
   <div class="item-details">
     <span class="item-title">{{ item().title }}</span>
     <span class="item-price">{{ "$" + item().price }}</span>
   </div>
   <div class="item-btn">
+    <app-button
+      [label]="'Remove'"
+      (btnClicked)="cartService.removeFromCart(item().id)"
+    ></app-button>
+  </div>
+</div> -->
+
+<div
+  class="bg-white shadow-[0_2px_4px_0_rgba(0,0,0,0.2)] p-6 rounded-lg flex items-center gap-4"
+>
+  <img [src]="item().image" alt="" class="w-[50px] h-[50px] object-contain" />
+  <div class="flex flex-col">
+    <span class="font-bold text-base">{{ item().title }}</span>
+    <span class="text-sm">{{ "$" + item().price }}</span>
+  </div>
+  <div class="flex-1">
     <app-button
       [label]="'Remove'"
       (btnClicked)="cartService.removeFromCart(item().id)"

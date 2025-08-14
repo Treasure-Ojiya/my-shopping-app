@@ -1,6 +1,6 @@
 <!-- <div class="product-cards">{{ product().title }}</div>
 <img [src]="product().image" alt="" class="product-img" /> -->
-<div class="product-cards">
+<!-- <div class="product-cards">
   <div class="margin-products">
     <img [src]="product().image" alt="" class="product-img" />
     <div class="product-details">
@@ -13,6 +13,33 @@
       ></app-primary-button>
     </div>
     <span class="stock-btn" [class]="stockStatus.class">
+      {{ stockStatus.text }}
+    </span>
+  </div>
+</div> -->
+
+<div
+  class="bg-white shadow-[0_2px_4px_0_rgba(0,0,0,0.2)] p-6 rounded-lg text-center flex flex-col justify-center items-center relative h-[400px]"
+>
+  <div class="mx-auto">
+    <img
+      [src]="product().image"
+      alt=""
+      class="w-[200px] h-[100px] object-contain"
+    />
+    <div class="mt-4 flex flex-col gap-2">
+      <h5 class="product-title">{{ product().title }}</h5>
+      <p class="product-price">${{ product().price }}</p>
+      <app-primary-button
+        [label]="'Add to Cart'"
+        class="mt-4 w-auto"
+        (btnClicked)="cartService.addToCart(product())"
+      ></app-primary-button>
+    </div>
+    <span
+      class="absolute right-2.5 top-2.5 font-bold"
+      [class]="stockStatus.class"
+    >
       {{ stockStatus.text }}
     </span>
   </div>
