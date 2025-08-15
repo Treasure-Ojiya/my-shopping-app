@@ -15,7 +15,7 @@
         <p class="product-price">${{ product().price }}</p>
         <app-primary-button
           [label]="'Add to Cart'"
-          customClasses="absolute bottom-10 left-1/2 transform -translate-x-1/2 py-2 px-4 sm:w-[150px] w-[300px]"
+          customClasses="absolute bottom-10 left-1/2 transform -translate-x-1/2 py-2 px-4 sm:w-[300px] w-[150px]"
           (btnClicked)="cartService.addToCart(product())"
         ></app-primary-button>
       </div>
