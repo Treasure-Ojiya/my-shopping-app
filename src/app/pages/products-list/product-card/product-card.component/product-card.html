@@ -9,7 +9,11 @@
         class="w-[200px] h-[100px] object-contain"
       />
       <div class="mt-4 flex flex-col gap-2">
-        <h5 class="product-title truncate w-full">{{ product().title }}</h5>
+        <h5
+          class="product-title truncate w-full overflow-hidden text-ellipsis whitespace-nowrap"
+        >
+          {{ product().title }}
+        </h5>
         <p class="product-price">${{ product().price }}</p>
         <app-primary-button
           [label]="'Add to Cart'"
