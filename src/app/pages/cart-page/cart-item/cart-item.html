@@ -13,17 +13,19 @@
 </div> -->
 
 <div
-  class="bg-white shadow-[0_2px_4px_0_rgba(0,0,0,0.2)] p-6 rounded-lg flex items-center gap-4"
+  class="flex items-center gap-4 bg-white shadow-[0_2px_4px_0_rgba(0,0,0,0.2)] p-6 mx-auto rounded-lg"
 >
   <img [src]="item().image" alt="" class="w-[50px] h-[50px] object-contain" />
-  <div class="flex flex-col">
-    <span class="font-bold text-base">{{ item().title }}</span>
-    <span class="text-sm">{{ "$" + item().price }}</span>
-  </div>
-  <div class="flex-1">
-    <app-button
-      [label]="'Remove'"
-      (btnClicked)="cartService.removeFromCart(item().id)"
-    ></app-button>
+  <div class="flex-1 flex flex-col lg:flex-row justify-between items-center">
+    <div class="flex flex-col">
+      <span class="font-bold text-base">{{ item().title }}</span>
+      <span class="text-sm">{{ "$" + item().price }}</span>
+    </div>
+    <div>
+      <app-button
+        [label]="'Remove'"
+        (btnClicked)="cartService.removeFromCart(item().id)"
+      ></app-button>
+    </div>
   </div>
 </div>

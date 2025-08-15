@@ -3,11 +3,12 @@ import { ProductsList } from '../../products-list';
 import { Product } from '../../../../modules/products-module';
 import { PrimaryButton } from '../../../../components/primary-button/primary-button';
 import { Cart } from '../../../../services/cart';
+import { CommonModule } from '@angular/common';
 // import { Cart } from '../../../../services/cart';
 
 @Component({
   selector: 'app-product-card',
-  imports: [PrimaryButton],
+  imports: [PrimaryButton, CommonModule],
   templateUrl: './product-card.html',
   styleUrl: './product-card.css',
 })

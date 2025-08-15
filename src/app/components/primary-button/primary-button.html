@@ -1,1 +1,13 @@
-<button class="cart-btn" (click)="btnClicked.emit()">{{ label() }}</button>
+<button
+  [ngClass]="[
+    'bg-amber-100',
+    'hover:bg-amber-200',
+    'py-1',
+    'px-2',
+    'rounded-lg',
+    customClasses
+  ]"
+  (click)="btnClicked.emit()"
+>
+  {{ label() }}
+</button>

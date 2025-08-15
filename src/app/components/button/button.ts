@@ -1,8 +1,9 @@
-import { Component, input, output } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { Component, Input, input, output } from '@angular/core';
 
 @Component({
   selector: 'app-button',
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './button.html',
   styleUrl: './button.css',
 })
@@ -14,4 +15,6 @@ export class Button {
   btnclicker() {
     console.log('button clicked');
   }
+
+  @Input() customClasses = '';
 }

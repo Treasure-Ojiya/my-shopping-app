@@ -1,6 +1,5 @@
-<div class="products-list">
+<div class="p-8 grid grid-cols-1 md:grid-cols-3 gap-4">
   @for (product of products(); track product.id) {
-  <!-- <div>{{ product.title }}</div> -->
   <app-product-card [product]="product"></app-product-card>
   }
 </div>

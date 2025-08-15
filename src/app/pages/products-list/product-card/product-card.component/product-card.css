@@ -1,4 +1,4 @@
-.product-cards {
+/* .product-cards {
   background-color: #fff;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
   padding: 1.5rem;
@@ -39,8 +39,8 @@
   position: absolute;
   right: 10px;
   top: 10px;
-  font-weight: bold;
-}
+  font-weight: bold; */
+/* } */
 
 .in-stock {
   color: green;

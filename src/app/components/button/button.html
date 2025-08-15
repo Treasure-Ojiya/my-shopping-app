@@ -1,3 +1,9 @@
-<button class="item-btn" (click)="btnClicked.emit()">
+<button
+  [ngClass]="
+    'text-black px-[10px] py-[5px] border-none cursor-pointer rounded-md w-full hover:bg-red-500 hover:text-white' +
+    customClasses
+  "
+  (click)="btnClicked.emit()"
+>
   {{ label() }}
 </button>
